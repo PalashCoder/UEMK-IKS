@@ -1,11 +1,11 @@
 "use client";
 
 import { ThemeProvider as Theme } from "next-themes";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import ScrollTop from "./ScrollTop";
 import NextNProgress from "nextjs-progressbar";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import ScrollTop from "./ScrollTop";
 
 const ThemeProvider = ({ children }) => {
   const [mounted, setMounted] = useState(false);

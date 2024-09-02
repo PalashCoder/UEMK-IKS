@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import Image from "next/image";
 import Link from "next/link";
 
 const ServiceCard = ({ imgSrc, title, desc }) => {
@@ -35,7 +35,7 @@ const Services = () => {
             className="object-cover w-full"
           />
           <button className="w-32 h-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <Link href={"https://youtu.be/aVNa8Dka5MA"} target="_blank">
+            <Link href={"/"}>
               <span className="playButton duration-700 w-full h-full bg-rose-500 rounded-full block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
               <PlayArrowIcon className="w-16 h-16 md:w-24 md:h-24 text-white bg-[#ffffffb8] rounded-full" />
             </Link>

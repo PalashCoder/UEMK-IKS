@@ -1,12 +1,12 @@
-import "./globals.css";
-import { DM_Sans } from "next/font/google";
 import ThemeProvider from "@/components/ThemeProvider";
+import { DM_Sans } from "next/font/google";
+import "./globals.css";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata = {
-  title: "Business App - Naseem Khan",
-  description: "Business App created by Naseem Khan",
+  title: "Indian Knowledge System | UEMK",
+  description: "The official Website for IKS of UEMK.",
 };
 
 export default function RootLayout({ children }) {

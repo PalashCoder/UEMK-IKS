@@ -1,7 +1,7 @@
-import Link from "next/link";
-import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import StarHalfRoundedIcon from "@mui/icons-material/StarHalfRounded";
+import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import Image from "next/image";
+import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ButtonGroup from "./ButtonGroup";
@@ -25,13 +25,9 @@ const Card = ({ star, title, imgSrc }) => {
       <div className="flex items-center gap-4 mt-5">
         <Image src={imgSrc} width={50} height={50} alt="testimonials" />
         <div>
-          <h3 className="font-semibold">Naseem Khan</h3>
-          <Link
-            href="https://github.com/NaseemKhan005"
-            target="_blank"
-            className="text-rose-600 font-[500]"
-          >
-            @naseemkhan
+          <h3 className="font-semibold">Palash Das</h3>
+          <Link href="/" className="text-rose-600 font-[500]">
+            @PalashCoder
           </Link>
         </div>
       </div>

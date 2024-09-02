@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
-import MenuIcon from "@mui/icons-material/Menu";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
-import { useEffect, useRef, useState } from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "next-themes";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
         <Link href={"/"}>
           <h2 className="text-3xl">
-            <span className="text-rose-600">N</span>aseem.
+            <span className="text-rose-600">P</span>alash
           </h2>
         </Link>
 
@@ -72,25 +72,16 @@ const Navbar = () => {
               </li>
             ))}
             <div className="md:hidden mx-auto absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-3">
-              <Link
-                href="https://www.facebook.com/profile.php?id=100017192357822&sk"
-                target="_blank"
-              >
+              <Link href="/">
                 <FacebookOutlinedIcon className="cursor-pointer hover:text-rose-600 text-xl" />
               </Link>
-              <Link
-                target="_blank"
-                href={"https://www.linkedin.com/in/naseem-khan-275275258/"}
-              >
+              <Link href={"/"}>
                 <LinkedInIcon className="cursor-pointer hover:text-rose-600 text-xl" />
               </Link>
-              <Link target="_blank" href={"https://github.com/NaseemKhan005/"}>
+              <Link href={"/"}>
                 <GitHubIcon className="cursor-pointer hover:text-rose-600 text-xl" />
               </Link>
-              <Link
-                target="_blank"
-                href={"https://www.instagram.com/naseem_khan005/"}
-              >
+              <Link href={"/"}>
                 <InstagramIcon className="cursor-pointer hover:text-rose-600 text-xl" />
               </Link>
             </div>
