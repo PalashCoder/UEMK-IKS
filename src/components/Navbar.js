@@ -9,6 +9,7 @@ import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -35,13 +36,11 @@ const Navbar = () => {
       ref={navbar}
       className={`${
         theme === "dark" ? "bg-[#121212]" : "bg-white text-black"
-      } w-full z-50 fixed top-0 left-0 py-4 mb-10`}
+      } w-full z-50 fixed top-0 left-0 mb-10`}
     >
-      <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
+      <div className="container py-0 px-5 md:px-16 flex items-center justify-between mx-auto">
         <Link href={"/"}>
-          <h2 className="text-3xl">
-            <span className="text-rose-600">P</span>alash
-          </h2>
+          <Image src={"/Logo.png"} height={100} width={100} />
         </Link>
 
         <div>
@@ -113,6 +112,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
